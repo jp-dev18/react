@@ -3,16 +3,19 @@ import Botao from "./components/Botao/Botao";
 import { useState } from "react";
 
 function App() {
- const [darkMode, setDarkMode] = useState(false);
+ const storedDarkMode = localStorage.getItem("darkMode");
+ const [darkMode, setDarkMode] = useState(storedDarkMode === "true");
   
  function handleChangeMode() {
   // O operador de navegação `!` inverte o valor booleano de `darkMode`.
   // Se darkMode for ´true´, ele se tornará `false`, e vice-versa.
   // Isso é usado para alternar entre os modos claro e escuro
+
+  localStorage.setItem("darkMode", !darkMode);
   setDarkMode(!darkMode);
  }
 
- //if e else
+ // if e else 
  // if (darkMode) {
  // } else {
  //
