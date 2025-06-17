@@ -1,9 +1,6 @@
 function Botao({ children, onClick }) {
   return (
-    <button
-      onClick={onClick}
-      className="cursor-pointer flex justify-center items-center gap-4 w-full rounded-lg border border-gray-400 overflow-hidden"
-    >
+    <button onClick={onClick} className="border rounded-lg border-gray-400 cursor-pointer flex items-center justify-center gap-4 w-full overflow-hidden">
       {children}
     </button>
   );
