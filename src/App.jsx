@@ -1,6 +1,6 @@
-import { FacebookLogo, InstagramLogo, LinkedinLogo, Sun, WhatsappLogo } from "phosphor-react"
-import Botao from "./components/Botao/Botao";
+import { FacebookLogo, InstagramLogo, LinkedinLogo, Sun } from "phosphor-react"
 import { useState } from "react";
+import Botao from "./components/Botao/Botao";
 
 function App() {
  const storedDarkMode = localStorage.getItem("darkMode");
